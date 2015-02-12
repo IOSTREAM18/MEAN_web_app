@@ -2,7 +2,8 @@
 
 module.exports = {
 	//db: 'mongodb://localhost/starterapp-dev',
-    db:' mongodb://<DalinHuang>:<DalinHuang>@ds051720.mongolab.com:51720/mean_stack_app_by_dalin_huang',
+    db: 'mongodb://DalinHuang:DalinHuang@ds051720.mongolab.com:51720/mean_stack_app_by_dalin_huang',
+    //db:' mongodb://DalinHuang:DalinHuang@ds051720.mongolab.com:51720/mean_stack_app_by_dalin_huang',
 	app: {
 		title: 'AppByDalin - Development Environment'
 	},
