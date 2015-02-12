@@ -5,7 +5,7 @@
 <br>
 ************************************************************************************************
 <br>
-MEAN_stack_WEB_APP is online, please visit the following link and have fun. <br>
+[MEAN_stack_WEB_APP] please visit the following link and have fun. <br>
 
 https://hidden-sands-2397.herokuapp.com
 <br>
