@@ -1,3 +1,16 @@
+
+************************************************************************************************
+
+MEAN_stack_WEB_APP is online, please visit the following link and have fun.
+https://hidden-sands-2397.herokuapp.com
+
+************************************************************************************************
+
+
+
+
+
+
 [![MEAN.JS Logo](http://meanjs.org/img/logo-small.png)](http://meanjs.org/)
 
 [![Build Status](https://travis-ci.org/meanjs/mean.svg?branch=master)](https://travis-ci.org/meanjs/mean)
