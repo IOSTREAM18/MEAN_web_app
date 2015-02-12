@@ -1,7 +1,7 @@
 {
-	"name": "starterapp",
+  "name": "AppByDalinHuang",
 	"description": "Full-Stack JavaScript with MongoDB, Express, AngularJS, and Node.js",
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"author": "DalinHuang",
 	"engines": {
 		"node": "0.10.x",
