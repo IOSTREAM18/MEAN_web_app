@@ -26,7 +26,7 @@ angular.module('core').controller('HomeController', ['$scope', 'Authentication',
                 description:'NEW CUSTOMERS IN 24H'
             },
             { //4
-                icon: 'glyphicon-record',
+                icon: 'glyphicon-envelope',
                 colour:'btn-info',
                 total:'78,300',
                 description:'EMAILS SENT'
@@ -40,7 +40,7 @@ angular.module('core').controller('HomeController', ['$scope', 'Authentication',
             { //6
                 icon: 'glyphicon-flag',
                 colour:'btn-danger',
-                total:'1,548',
+                total:'1,549',
                 description:'LOCATION SHARED'
             }
         ];
