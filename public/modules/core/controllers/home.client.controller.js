@@ -1,49 +1,52 @@
 'use strict';
-
-
 angular.module('core').controller('HomeController', ['$scope', 'Authentication',
 	function($scope, Authentication) {
 		// This provides Authentication context.
 		$scope.authentication = Authentication;
 
         $scope.alerts = [
-            {  //1
-                icon: 'glyphicon-user',
-                colour:'btn-success',
-                total:'17,839',
-                description:'TOTAL CUSTOMERS'
-            },
-            {  //2
-                icon: 'glyphicon-calendar',
-                colour:'btn-primary',
-                total:'1,382',
-                description:'UPCOMING EVENTS'
-            },
-            {  //3
-                icon: 'glyphicon-edit',
-                colour:'btn-success',
-                total:'387',
-                description:'NEW CUSTOMERS IN 24H'
-            },
-            { //4
-                icon: 'glyphicon-envelope',
+            {
+                icon:'glyphicon-user',
                 colour:'btn-info',
-                total:'78,300',
-                description:'EMAILS SENT'
+                name:'Linkedin',
+                description:'Profile of Dalin Huang',
+                links:'http://ca.linkedin.com/in/dalinhuang'
             },
-            { //5
-                icon: 'glyphicon-eye-open',
+            {
+                icon:'glyphicon-inbox',
+                colour:'btn-primary',
+                name:'Dropbox',
+                description:'Check out my project and code',
+                links:'https://www.dropbox.com/sh/ysv8684jlmzjbqf/AAAEz05aoz8a79AbvpJ5q7-Qa?dl=0'
+            },
+            {
+                icon:'glyphicon-cloud-upload',
+                colour:'btn-success',
+                name:'GitHub',
+                description:'Build software better, together.',
+                links:'https://github.com/hdl881127'
+            },
+            {
+                icon:'glyphicon-cloud',
                 colour:'btn-warning',
-                total:'2,268',
-                description:'CURRENT CUSTOMERS ONLINE'
+                name:'Web App',
+                description:'Web App (old version) by Dalin Huang',
+                links:'https://hidden-sands-2397.herokuapp.com'
             },
-            { //6
-                icon: 'glyphicon-flag',
+            {
+                icon:'glyphicon-thumbs-up',
+                colour:'btn-info',
+                name:'Facebook',
+                description:'Not active in facebook lol...',
+                links:'https://www.facebook.com/dalin.huang.39'
+            },
+            {
+                icon:'glyphicon-search',
                 colour:'btn-danger',
-                total:'1,549',
-                description:'LOCATION SHARED'
+                name:'Google',
+                description:'My Home Page',
+                links:'https://www.google.ca/'
             }
         ];
-
 	}
 ]);
