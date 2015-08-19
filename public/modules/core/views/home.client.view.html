@@ -1,24 +1,159 @@
-<section data-ng-controller="HomeController">
-    <div class="row">
+<div class="row-xs-12">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-        <div class="col-sm-6" ng-repeat="alert in alerts">
+<section data-ng-controller="HomeController">
+    <div class="row-xs-12">
+        <div class="well">
+            <h3>About this MeanApp, there are many things you can do:</h3>
+            <ul>
+                <li>
+                    <h5>Click <em>Sign up</em> to get started.</h5>
+                </li>
+                <li>
+                    <h5>After <em>Sign in</em> you can check out the article and customers.</h5>
+                </li>
+                <li>
+                    <h5>You could also check out my links, profile, resume.</h5>
+                </li>
+                <li>
+                    <h5>Have fun...</h5>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="row" align="center">
+        <div class="col-xs-4 col-xs-offset-2">
+            <a href="" target="_blank">
+                <img src="http://hitwebcounter.com/counter/counter.php?page=6149793&style=0025&nbdigits=5&type=page&initCount=0" title="web page hits count" Alt="web page hits count"   border="0" >
+            </a><br/>
+            <a href="" title="Measure Website Visitors" target="_blank" style="font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #758087; text-decoration: none ;"><strong>Page view count</strong>
+            </a>
+        </div>
+        <div class="col-xs-4">
+            <a href="" target="_blank">
+                <img src="http://hitwebcounter.com/counter/counter.php?page=6149792&style=0025&nbdigits=5&type=ip&initCount=0" title="unique visitors count" Alt="unique visitors count"   border="0" >
+            </a><br/>
+            <a href="" title="Measure Website Visitors"target="_blank" style="font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #758087; text-decoration: none ;"><strong>Unique visitors</strong>
+            </a>
+        </div>
+        <div class="col-xs-2">
+        </div>
+    </div>
+
+
+    <div class="row-xs-12">
+        <div class="col-sm-5 col-xs-offset-1" ng-repeat="alert in alerts">
             <div class="row">
-                <div class="col-xs-4">
-                   <h1 class="pull-right"> <!-- pull icon to right (closer to numbers) -->
-                       <button type="button" class="btn" ng-class="alert.colour">
-                           <i class="glyphicon" ng-class="alert.icon"></i>
-                       </button>
-                   </h1>
-                </div>
-                <div class="col-xs-8">
-                   <h1>{{alert.total}}</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-8 col-xs-offset-4">
-                   <span class="text-muted">{{alert.description}}</span>
+             <div class="col-xs-2">
+                 <h1 class="pull-right">
+                     <a target="_blank" style="font-size: 30px" class="btn" ng-class="alert.colour" href="" ng-href="{{alert.links}}" role="button">
+                         <i class="glyphicon" ng-class="alert.icon"></i>
+                     </a>
+                 </h1>
+             </div>
+                <div class="col-xs-10">
+                    <h2>{{alert.name}}</h2>
+                    <div class="row">
+                        <div class="col-xs-12" style="margin-top: -5px">
+                            <span class="text-muted">{{alert.description}}</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="row-xs-12">
+        <br /><br /><br /><br />
+        <h2>MEAN.JS Documentation</h2>
+        <div class="row-xs-12">
+            <div class="well">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h2>
+                            <strong>M</strong>ongoDB
+                        </h2>
+                        <p><a target="_blank" href="http://mongodb.org/">MongoDB</a> is a database. MongoDB's <a target="_blank" href="http://docs.mongodb.org/manual/">great manual</a> is the place to get started with NoSQL and MongoDB.</p>
+                    </div>
+                    <div class="col-md-3">
+                        <h2>
+                            <strong>E</strong>xpress
+                        </h2>
+                        <p><a target="_blank" href="http://expressjs.com/"> Express</a> is an app server. Check out <a target="_blank" href="http://expressjs.com/guide.html">The Express Guide</a> or <a target="_blank" href="http://stackoverflow.com/questions/8144214/learning-express-for-node-js">StackOverflow</a> for more info.</p>
+                    </div>
+                    <div class="col-md-3">
+                        <h2>
+                            <strong>A</strong>ngularJS
+                        </h2>
+                        <p>AngularJS is web app framework. <a target="_blank" href="http://angularjs.org/">Angular's website</a> offers a lot. The <a target="_blank" href="http://www.thinkster.io/">Thinkster Popular Guide</a> and <a target="_blank" href="https://egghead.io/">Egghead Videos</a> are great resources.</p>
+                    </div>
+                    <div class="col-md-3">
+                        <h2>
+                            <strong>N</strong>ode.js
+                        </h2>
+                        <p><a target="_blank" href="http://nodejs.org/">Node.js</a> is a web server. Node's website and this <a target="_blank" href="http://stackoverflow.com/questions/2353818/how-do-i-get-started-with-node-js">stackOverflow thread</a> offer excellent starting points to get to grasps with node.</p>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <div class="row">
+        <!-- SHARE PANEL -->
+        <div class="col-sm-6">
+            <div class="well well-sm well-subtle clearfix">
+                <h4 class="well-title" s><b>Donations</b></h4>
+                <br />
+                <div class="row-sm-12 social-sharing text-center" style="margin-top: 25px;">
+                    <div class="col-xs-3">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=" title="Share on Facebook" target="_blank" class="share-btn facebook"><i class="fa fa-facebook" style="color:#3b5998"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- MESSAGE PANEL -->
+        <div class="col-sm-6">
+            <div class="well well-sm well-subtle clearfix">
+                <h4 class="well-title"><b>Share This Page</b></h4>
+                <br />
+                <div class="row-sm-12 social-sharing text-center" style="margin-top: 25px;">
+                    <div class="col-xs-3">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=" title="Share on Facebook" target="_blank" class="share-btn facebook"><i class="fa fa-facebook" style="color:#3b5998"></i></a>
+                    </div>
+                    <div class="col-xs-3">
+                        <a href="http://twitter.com/share?url=&text=" title="Share on Twitter" target="_blank"><i class="fa fa-twitter" style="color:#00aced"></i></a>
+                    </div>
+                    <div class="col-xs-3">
+                        <a href="mailto:?body=" title="Share by Email">
+                            <i class="fa fa-envelope" ></i>
+                        </a>
+                    </div>
+                    <div class="col-xs-3">
+                        <a href="http://www.addthis.com/bookmark.php?source=tbx32nj-1.0&amp;=300&amp;pubid=ra-4da371d82c643e7b&amp;url=" target="_blank" title="More share options" ><i class="fa fa-plus-square star-yellow"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="row-xs-12">
+        <button ng-click="count = count + 1" ng-init="count=0">
+            Increment
+        </button>
+        <span>
+          count: {{count}}
+        </span>
+    </div> -->
+
+    <div class="row-xs-12">
+        <footer class="mainFooter">
+            <p>Copyright &copy; <a href="#" title="DalinHuang" style="color: darkgrey">dalinhuang.com</a></p>
+        </footer>
+    </div>
 
 </section>
+</div>
+
