@@ -45,9 +45,6 @@
     color: #FFF;
 }
 
-
-
-
 .well{
     background:white;
     border: 5px solid #d7dee2;
@@ -122,3 +119,28 @@ hr{
     padding:0;
 }
 
+/*for ripple effect (google)*/
+.btn{
+    border:none;
+    position:relative;
+    background-color: #97bb3e;
+    color: #fff;
+    outline:none;
+    cursor : pointer;
+}
+
+.btn:hover{
+    outline:none;
+}
+
+svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+circle {
+    fill: rgb(190,190,190);
+    opacity: .10;
+}
