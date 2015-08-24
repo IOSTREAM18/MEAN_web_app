@@ -1,9 +1,9 @@
 'use strict';
-angular.module('core').controller('HomeController', ['$scope', 'Authentication',
-	function($scope, Authentication) {
-		// This provides Authentication context.
-		$scope.authentication = Authentication;
 
+var app = angular.module('core', []);
+app.controller('HomeController', function($scope, Authentication){
+        // This provides Authentication context.
+        $scope.authentication = Authentication;
         $scope.alerts = [
             {
                 icon:'glyphicon-user',
@@ -49,16 +49,7 @@ angular.module('core').controller('HomeController', ['$scope', 'Authentication',
                 links:'https://www.google.ca/'
             }
         ];
-	}
 
-
-]);
-
-
-var app = angular.module('myApp', []);
-
-app.controller('DefaultController', function($scope){
-    $scope.line = 'Sample Text';
 });
 
 app.directive('rippleEffect', function($interval){
