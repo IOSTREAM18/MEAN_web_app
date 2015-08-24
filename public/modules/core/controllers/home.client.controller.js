@@ -81,16 +81,16 @@ app.directive('rippleEffect', function($interval){
                 $scope.changeInValue = 800;
                 $scope.totalIterations = 120;
 
-                $scope.changeInValueOpacity = .5;
+                $scope.changeInValueOpacity = 0.5;
                 $interval.cancel( $scope.stopPromise );
-                $scope.stopPromise = $interval(function(){$scope.move()}, 8);
+                $scope.stopPromise = $interval(function(){$scope.move();}, 8);
 
                 event.preventDefault();
             });
 
             $scope.move = function(){
                 $scope.circle.attr('r', $scope.easeInOutQuad($scope.currentIteration, $scope.startValue, $scope.changeInValue, $scope.totalIterations));
-                $scope.circle.css('opacity', .5-$scope.easeInOutQuad($scope.currentIteration++, $scope.startValue, $scope.changeInValueOpacity, $scope.totalIterations));
+                $scope.circle.css('opacity', 0.5-$scope.easeInOutQuad($scope.currentIteration++, $scope.startValue, $scope.changeInValueOpacity, $scope.totalIterations));
 
                 if($scope.currentIteration >=120){
                     $interval.cancel($scope.stopPromise);
@@ -103,7 +103,7 @@ app.directive('rippleEffect', function($interval){
                     return changeInValue / 2 * currentIteration * currentIteration + startValue;
                 }
                 return -changeInValue / 2 * ((--currentIteration) * (currentIteration - 2) - 1) + startValue;
-            }
+            };
         }
-    }
+    };
 });
